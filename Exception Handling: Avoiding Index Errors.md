@@ -11,8 +11,15 @@ To write a Python program that handles an **IndexError** when trying to access a
 3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
-Add code here
+lst = [10, 20, 30, 40, 50]
 
+try:
+    index = int(input("Enter the index: "))
+    print("Element =", lst[index])
+except IndexError:
+    print("Error: Index out of range")
 ## Output
-
+Enter the index: 2
+Element = 30
 ## Result
+Thus, the Python program using exception handling to avoid IndexError was successfully executed and verified.
